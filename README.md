@@ -18,7 +18,7 @@ There's no emulator in the loop, no interpreter, no JIT, no PowerPC anywhere at 
 **Port made by [WitherBlitz](https://github.com/WitherBlitz) with the help of
 [WiiCompiled](https://github.com/patchzyy/Wiicompiled)'s code, and was entirely coded by
 Claude Opus 5.5.**
-
+the mod manager mdae by snowlevelup
 > [!IMPORTANT]
 > There are no game files in this project or its releases: no disc image, no levels, music,
 > graphics or sounds. You need your own copy of **New Super Mario Bros. Wii (USA, `SMNE01`,
