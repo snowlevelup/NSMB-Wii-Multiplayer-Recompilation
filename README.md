@@ -10,7 +10,7 @@
   <a href="LICENSE"><img alt="License: GPLv3" src="https://img.shields.io/badge/license-GPLv3-2EA44F?logo=gnu&amp;logoColor=white"></a>
 </p>
 
-A native port of New Super Mario Bros. Wii for Android phones and Windows PCs, made with static
+A native port of New Super Mario Bros. Wii for Windows PCs, made with static
 recompilation.
 
 There's no emulator in the loop, no interpreter, no JIT, no PowerPC anywhere at runtime.
@@ -28,10 +28,6 @@ Claude Opus 5.5.**
 
 [I just want to play](#installing)
 
-<p align="center">
-  <img src="docs/screenshots/android-title.webp" alt="New Super Mario Bros. Wii running natively on an Android phone, with the on-screen Wii Remote controls" width="800">
-  <br><sub>Running natively on Android at 60 fps, with the on-screen sideways Wii Remote.</sub>
-</p>
 
 ---
 
