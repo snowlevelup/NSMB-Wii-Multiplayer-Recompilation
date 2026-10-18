@@ -318,3 +318,76 @@ Not affiliated with, endorsed by, or associated with Nintendo. New Super Mario B
 trademark of Nintendo.
 
 **I plan to fully decompile this game in the near future, but for now with the time I have at the moment, this'll have to do. At first, this project was to just see the limits of what I can do with Opus, but now I'd like to see it to the end haha. I'll use this as a base for some of the features and copy them over once I decompile the game. Sorry for the misleading repo name! I changed my mind midway through the creation of this project.**
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+how it works ### NSMBWmod manager
+
+The Windows mod manager installs compatible file-based NSMBW mods and configures the game to load
+them. It does not include a game, patch a disc image, or apply executable/code patches. A ROM hack
+can work if it is distributed as a Riivolution pack or as replacement game files in the supported
+game-folder layout. Use mods made for New Super Mario Bros. Wii and compatible with your game build.
+
+The manager keeps each installed mod in a separate folder and records its enabled state and load
+order. When the game starts, it writes the enabled mod folders to Config.toml as overlay roots.
+The runtime reads replacement files from those folders while leaving the original extracted game
+files in place. When two enabled mods provide the same relative path, the first enabled mod wins.
+
+Set it up
+Build or download the Windows game and extract it. Keep NSMBW.exe in its game folder.
+Copy all files to from windows into the same folder as NSMBW.exe.
+Keep the all manager files together; the batch file starts the PowerShell interface, and the
+PNG supplies Mario's header artwork btw you dont need png for it to work .
+Double-click NSMBW-Mod-Manager.bat. No command-line steps are needed. The manager and game
+must be kept in a writable location if you use portable UserData beside the executable.
+Install a mod
+Find an NSMBW mod on GameBanana or another source. Read the mod's instructions and check that it
+is intended for the version of the game you use.
+In the manager, choose GameBanana to browse, or download the mod archive yourself.
+Choose Install ZIP/RAR… for a .zip or .rar, or Install folder… for an extracted mod.
+For a folder, select the folder that contains the mod's riivolution folder or its replacement
+game folders, such as object, stage, or moviedemo.
+Give the mod a name when prompted. The manager copies it into its managed mods folder and adds
+it to the Enabled mods list. Repeat to install more mods; each archive/folder is installed as
+one entry.
+RAR extraction needs 7-Zip. The manager can usually find 7-Zip
+automatically. If it cannot, set the 7z.exe path in Settings. The configured archive limit is
+10 GB by default and can be raised in Settings up to 50 GB; make sure the drive has enough free
+space for extraction.
+
+Enable, disable, and set priority
+Select an enabled or disabled mod and press Disable or Enable to move it between lists.
+In Enabled mods, the first row has the highest priority. Select a row and use Move up or
+Move down to change which mod wins when both provide the same game file.
+The Conflicts column shows the number of overlapping game file paths for each enabled mod.
+Double-click an enabled mod to see the paths and the other mods that provide them. The manager
+compares file paths; it cannot merge two mods' edits to the same file.
+Remove… removes that mod's managed installed copy. Keep the original download if you may want
+to reinstall it.
+Use Launch game to apply the current enabled list and start NSMBW.exe beside the manager.
+Otherwise, launch the game normally after making mod changes. Restart a running game to see
+changes.
+Settings and storage
+Open Settings to choose a Theme (Windows default, light, or dark), set the maximum archive
+extraction size, choose the 7-Zip executable, or browse for a Mods storage folder. Changing the
+storage folder copies the manager's installed mods and state to the new location; it leaves the old
+folders in place as a backup. The manager remembers the selected location next time. The game's
+own extracted files are not overwritten by the mod manager.
+
+By default, settings and game configuration are in Documents\MarioWiiSaveData; mods are in its
+Mods subfolder. The selected storage folder can be on another drive. If the installation includes
+a portable.txt marker, portable user data is stored in UserData beside NSMBW.exe instead.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
