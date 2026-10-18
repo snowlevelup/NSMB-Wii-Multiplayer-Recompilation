@@ -1,4 +1,4 @@
-# NSMB Wii Multiplayer Recompilation
+# NSMB Wii Multiplayer Recompilation with mod manager no android mod manager
 
 <p align="center">
   <a href="https://github.com/WitherBlitz/NSMB-Wii-Multiplayer-Recompilation/releases/latest"><img alt="Android 11+, arm64" src="https://img.shields.io/badge/Android-11%2B%20%C2%B7%20arm64-3DDC84?logo=android&amp;logoColor=white"></a>
